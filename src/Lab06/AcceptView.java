@@ -1,9 +1,9 @@
-package view;
+package Lab06;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class AcceptView extends JFrame {
+class AcceptView extends JFrame {
 
     private JButton ok = new JButton("Так");
     private JButton cancel = new JButton("Відміна");
@@ -11,6 +11,14 @@ public class AcceptView extends JFrame {
     private JPanel mainPanel = new JPanel();
     private JPanel northPanel = new JPanel();
     private JPanel southPanel = new JPanel();
+
+    JButton getOk() {
+        return ok;
+    }
+
+    JButton getCancel() {
+        return cancel;
+    }
 
     AcceptView() {
         init();
@@ -20,7 +28,7 @@ public class AcceptView extends JFrame {
     private void init() {
         setSize(350, 150);
         setTitle("Необхідне підтвердження");
-        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         northPanel.add(acceptanceText);
 
@@ -33,4 +41,5 @@ public class AcceptView extends JFrame {
 
         add(mainPanel);
     }
+
 }

@@ -1,13 +1,9 @@
-package view;
+package Lab06;
 
 public class Run {
 
-
-
-
     public static void main(String[] args) {
 
-//        new View();
-        new AcceptView();
+        new Lab06.View();
     }
 }
